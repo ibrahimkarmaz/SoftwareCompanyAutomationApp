@@ -1,0 +1,8 @@
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software_Company_Automation.AramaYapPnc.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software_Company_Automation.APencere.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software_Company_Automation.Properties.Resources.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software_Company_Automation.StokEkleGuncellePenceresi.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software_Company_Automation.UrunListesiPencere.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software_Company_Automation.UrunSilPnc.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software Company Automation.csproj.GenerateResource.cache
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software Company Automation.csproj.CoreCompileInputs.cache
