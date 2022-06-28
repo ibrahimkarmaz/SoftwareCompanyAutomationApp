@@ -28,49 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(APencere));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.satis_kiralama_listesi = new System.Windows.Forms.Button();
-            this.satis_kiralama_bt = new System.Windows.Forms.Button();
             this.arama_yap_bt = new System.Windows.Forms.Button();
             this.stok_listesi = new System.Windows.Forms.Button();
             this.sil_bt = new System.Windows.Forms.Button();
             this.guncelle_bt = new System.Windows.Forms.Button();
             this.ekle_bt = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(243, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(456, 242);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
-            // 
-            // satis_kiralama_listesi
-            // 
-            this.satis_kiralama_listesi.BackColor = System.Drawing.Color.White;
-            this.satis_kiralama_listesi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.satis_kiralama_listesi.Location = new System.Drawing.Point(475, 260);
-            this.satis_kiralama_listesi.Name = "satis_kiralama_listesi";
-            this.satis_kiralama_listesi.Size = new System.Drawing.Size(225, 55);
-            this.satis_kiralama_listesi.TabIndex = 15;
-            this.satis_kiralama_listesi.Text = "SATIŞ LİSTESİ";
-            this.satis_kiralama_listesi.UseVisualStyleBackColor = false;
-            // 
-            // satis_kiralama_bt
-            // 
-            this.satis_kiralama_bt.BackColor = System.Drawing.Color.White;
-            this.satis_kiralama_bt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.satis_kiralama_bt.Location = new System.Drawing.Point(244, 259);
-            this.satis_kiralama_bt.Name = "satis_kiralama_bt";
-            this.satis_kiralama_bt.Size = new System.Drawing.Size(225, 56);
-            this.satis_kiralama_bt.TabIndex = 14;
-            this.satis_kiralama_bt.Text = "SATIŞ İŞLEMLERİ";
-            this.satis_kiralama_bt.UseVisualStyleBackColor = false;
             // 
             // arama_yap_bt
             // 
@@ -137,10 +100,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(711, 325);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.satis_kiralama_listesi);
-            this.Controls.Add(this.satis_kiralama_bt);
+            this.ClientSize = new System.Drawing.Size(247, 325);
             this.Controls.Add(this.arama_yap_bt);
             this.Controls.Add(this.stok_listesi);
             this.Controls.Add(this.sil_bt);
@@ -153,16 +113,11 @@
             this.Text = "Genel Pencere";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.APencere_FormClosing);
             this.Load += new System.EventHandler(this.APencere_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button satis_kiralama_listesi;
-        private System.Windows.Forms.Button satis_kiralama_bt;
         private System.Windows.Forms.Button arama_yap_bt;
         private System.Windows.Forms.Button stok_listesi;
         private System.Windows.Forms.Button sil_bt;

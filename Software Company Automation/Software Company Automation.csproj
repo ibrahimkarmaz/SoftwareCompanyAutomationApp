@@ -46,17 +46,59 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaForm.Designer.cs">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Anapencere.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anapencere.Designer.cs">
+      <DependentUpon>Anapencere.cs</DependentUpon>
+    </Compile>
     <Compile Include="AramaYapPnc.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AramaYapPnc.Designer.cs">
       <DependentUpon>AramaYapPnc.cs</DependentUpon>
     </Compile>
+    <Compile Include="DevamKontrolForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevamKontrolForm.Designer.cs">
+      <DependentUpon>DevamKontrolForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GirisPenceresi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GirisPenceresi.Designer.cs">
+      <DependentUpon>GirisPenceresi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriArama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriArama.Designer.cs">
+      <DependentUpon>MusteriArama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriArsivi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriArsivi.Designer.cs">
+      <DependentUpon>MusteriArsivi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musteri_islemleri_penceresi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musteri_islemleri_penceresi.Designer.cs">
+      <DependentUpon>Musteri_islemleri_penceresi.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -78,11 +120,32 @@
     <Compile Include="UrunSilPnc.Designer.cs">
       <DependentUpon>UrunSilPnc.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AnaForm.resx">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Anapencere.resx">
+      <DependentUpon>Anapencere.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AramaYapPnc.resx">
       <DependentUpon>AramaYapPnc.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DevamKontrolForm.resx">
+      <DependentUpon>DevamKontrolForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GirisPenceresi.resx">
+      <DependentUpon>GirisPenceresi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriArama.resx">
+      <DependentUpon>MusteriArama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriArsivi.resx">
+      <DependentUpon>MusteriArsivi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musteri_islemleri_penceresi.resx">
+      <DependentUpon>Musteri_islemleri_penceresi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

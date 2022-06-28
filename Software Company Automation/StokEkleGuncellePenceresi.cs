@@ -63,26 +63,10 @@ namespace Software_Company_Automation
         private void KategorileriGetir()
         {//ÜRÜN KATEGORİ
             urun_kategori_comboBox1.Items.Clear();
-            urun_kategori_comboBox1.Items.Add("KADIN KOLYE");
-            urun_kategori_comboBox1.Items.Add("KADIN SAAT");
-            urun_kategori_comboBox1.Items.Add("ERKEK SAAT");
-            urun_kategori_comboBox1.Items.Add("BİLEKLİK");
-            urun_kategori_comboBox1.Items.Add("GÜMÜŞ");
-            urun_kategori_comboBox1.Items.Add("YÜZÜK");
-            urun_kategori_comboBox1.Items.Add("KÜPE");
-            urun_kategori_comboBox1.Items.Add("GÖZLÜK");
-            urun_kategori_comboBox1.Items.Add("ALTIN ÜRÜNLERİ");
-            urun_kategori_comboBox1.Items.Add("CÜZDAN");
-            urun_kategori_comboBox1.Items.Add("TAKI");
-            urun_kategori_comboBox1.Items.Add("TESPİT");
-            urun_kategori_comboBox1.Items.Add("BERE");
-            urun_kategori_comboBox1.Items.Add("ŞAL");
-            urun_kategori_comboBox1.Items.Add("AKSESUAR");
-            urun_kategori_comboBox1.Items.Add("ŞEMSİYE");
-            urun_kategori_comboBox1.Items.Add("ÇAKMAK");
-            urun_kategori_comboBox1.Items.Add("CEP SAATİ");
-            urun_kategori_comboBox1.Items.Add("ANAHTARLIK");
-            urun_kategori_comboBox1.Items.Add("KRAVAT");
+            urun_kategori_comboBox1.Items.Add("DONANIM");
+            urun_kategori_comboBox1.Items.Add("YAZILIM");
+
+
 
             urun_kategori_comboBox1.SelectedIndex = 0;
         }
