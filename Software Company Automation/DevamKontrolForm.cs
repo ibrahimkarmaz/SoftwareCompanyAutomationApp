@@ -18,7 +18,7 @@ namespace Software_Company_Automation
             InitializeComponent();
         }
 
-        SqlConnection baglanti = new SqlConnection(AnaForm.globel_baglantisi_adresi);//VERİTABANINA BAĞLANTI ADRESİ
+        SqlConnection baglanti = new SqlConnection(GirisPencere.global_baglanti_adresi);//VERİTABANINA BAĞLANTI ADRESİ
         SqlDataAdapter Komutlar;//tablolari çekmek için kullanılıyor
         SqlCommand komut;//sql ifadeleri özellikle insert,delete,update vss...
         SqlDataReader oku;//çekilen verileri teker teker okumamızı sağlar
@@ -32,7 +32,7 @@ namespace Software_Company_Automation
             {
                 devamsizlik_listesi.Items.Clear();
                 baglanti.Open();//VERİTABANINA BAĞLANTI
-                komut = new SqlCommand("select * from DevamsizlikTablosu where tc='"+AnaForm.devamsizlik_islemleri_icin_tc+"'", baglanti);//TÜM DERSLERİ GETİREN KOMUT
+                komut = new SqlCommand("select * from DevamsizlikTablosu where tc='"+PersonelPencere.devamsizlik_islemleri_icin_tc+"'", baglanti);//TÜM DERSLERİ GETİREN KOMUT
                 oku = komut.ExecuteReader();//KOMUTU ÇALIŞTIRMA
                 while (oku.Read())//OKUMA VERİ VARSA;
                 {
@@ -64,7 +64,7 @@ namespace Software_Company_Automation
             try
             {
                 baglanti.Open();//VERİTABANINA BAĞLANIR
-                komut = new SqlCommand("insert into DevamsizlikTablosu values('" +AnaForm.devamsizlik_islemleri_icin_tc + "','"+devamsizlik_maskedTextBox1.Text+"')", baglanti);//DEVAMSIZLIK EKLEME KOMUTU
+                komut = new SqlCommand("insert into DevamsizlikTablosu values('" +PersonelPencere.devamsizlik_islemleri_icin_tc + "','"+devamsizlik_maskedTextBox1.Text+"')", baglanti);//DEVAMSIZLIK EKLEME KOMUTU
                 komut.ExecuteNonQuery();//SQL İFADELERİNİN ÇALIŞIR
                 baglanti.Close();//VERİTABANI BAĞLANTISI KAPATILIR
                 MessageBox.Show("DEVAMSIZLIK BİLGİSİ EKLENDI.", "DEVAMSIZLIK İŞLEMLERİ", MessageBoxButtons.OK, MessageBoxIcon.Information);//BİLGİ VERİR
@@ -94,7 +94,7 @@ namespace Software_Company_Automation
             try
             {
                 baglanti.Open();//VERİTABANINA BAĞLANIR
-                komut = new SqlCommand("delete from DevamsizlikTablosu where tc='" + AnaForm.devamsizlik_islemleri_icin_tc + "' and devamsizlik_gunu='"+devamsizlik_listesi.SelectedItem+"'", baglanti);//DEVAMSIZLIK SİLME KOMUTU
+                komut = new SqlCommand("delete from DevamsizlikTablosu where tc='" + PersonelPencere.devamsizlik_islemleri_icin_tc + "' and devamsizlik_gunu='"+devamsizlik_listesi.SelectedItem+"'", baglanti);//DEVAMSIZLIK SİLME KOMUTU
                 komut.ExecuteNonQuery();//SQL İFADELERİNİN ÇALIŞIR
                 baglanti.Close();//VERİTABANI BAĞLANTISI KAPATILIR
                 MessageBox.Show("DEVAMSIZLIK BİLGİSİ SİLİNDİ.", "DEVAMSIZLIK İŞLEMLERİ", MessageBoxButtons.OK, MessageBoxIcon.Information);//BİLGİ VERİR

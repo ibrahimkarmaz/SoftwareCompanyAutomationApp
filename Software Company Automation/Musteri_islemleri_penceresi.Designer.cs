@@ -1,6 +1,6 @@
 ﻿namespace Software_Company_Automation
 {
-    partial class Musteri_islemleri_penceresi
+    partial class MusteriEklePencere
     {
         /// <summary>
         /// Required designer variable.
@@ -347,7 +347,7 @@
             this.iptal_et_buton.UseVisualStyleBackColor = false;
             this.iptal_et_buton.Click += new System.EventHandler(this.iptal_et_buton_Click);
             // 
-            // Musteri_islemleri_penceresi
+            // MusteriEklePencere
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -358,7 +358,7 @@
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Musteri_islemleri_penceresi";
+            this.Name = "MusteriEklePencere";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Müşteri Ekle";
             this.Load += new System.EventHandler(this.Form1_Load);

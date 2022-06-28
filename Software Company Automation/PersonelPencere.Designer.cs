@@ -1,6 +1,6 @@
 ﻿namespace Software_Company_Automation
 {
-    partial class AnaForm
+    partial class PersonelPencere
     {
         /// <summary>
         /// Required designer variable.
@@ -342,7 +342,7 @@
             this.devamsizlik_islemleri_buton.UseVisualStyleBackColor = true;
             this.devamsizlik_islemleri_buton.Click += new System.EventHandler(this.devamsizlik_islemleri_buton_Click);
             // 
-            // AnaForm
+            // PersonelPencere
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -361,7 +361,7 @@
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "AnaForm";
+            this.Name = "PersonelPencere";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PERSONEL İŞLEMLERİ";
             this.Load += new System.EventHandler(this.Form1_Load);

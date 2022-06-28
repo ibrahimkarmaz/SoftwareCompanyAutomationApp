@@ -41,7 +41,7 @@ namespace Software_Company_Automation
                 if (oku.Read())//EĞER VERİLER OKUNUYORSA DOĞRU BLOĞUNA GİRER.
                 {
                     //ANAPENCEREYİ PENCEREYİ AÇMA KOMUTU
-                    Anapencere ac = new Anapencere();
+                    MusteriAnaPencere ac = new MusteriAnaPencere();
                     ac.Show();
                     this.Hide();//BU PENCEREYİ GİZLEME KODU
                 }

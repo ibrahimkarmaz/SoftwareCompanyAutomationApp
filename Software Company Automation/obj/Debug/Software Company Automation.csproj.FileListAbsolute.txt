@@ -1,21 +1,23 @@
-C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\bin\Debug\Software Company Automation.exe.config
-C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\bin\Debug\Software Company Automation.exe
-C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\bin\Debug\Software Company Automation.pdb
-C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software Company Automation.csprojAssemblyReference.cache
-C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software_Company_Automation.AnaForm.resources
-C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software_Company_Automation.Anapencere.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software_Company_Automation.AdminPencere.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software_Company_Automation.PersonelPencere.resources
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software_Company_Automation.AramaYapPnc.resources
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software_Company_Automation.DevamKontrolForm.resources
-C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software_Company_Automation.APencere.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software_Company_Automation.GirisPencere.resources
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software_Company_Automation.GirisPenceresi.resources
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software_Company_Automation.MusteriArama.resources
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software_Company_Automation.MusteriArsivi.resources
-C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software_Company_Automation.Musteri_islemleri_penceresi.resources
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software_Company_Automation.Properties.Resources.resources
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software_Company_Automation.StokEkleGuncellePenceresi.resources
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software_Company_Automation.UrunListesiPencere.resources
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software_Company_Automation.UrunSilPnc.resources
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software Company Automation.csproj.GenerateResource.cache
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software Company Automation.csproj.CoreCompileInputs.cache
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software Company Automation.csprojAssemblyReference.cache
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\bin\Debug\Software Company Automation.exe.config
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\bin\Debug\Software Company Automation.exe
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\bin\Debug\Software Company Automation.pdb
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software Company Automation.exe
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software Company Automation.pdb
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software_Company_Automation.PersonelIslemPencere.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software_Company_Automation.MusteriAnaPencere.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software_Company_Automation.MusteriEklePencere.resources

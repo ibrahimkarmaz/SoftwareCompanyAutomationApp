@@ -19,8 +19,6 @@ namespace Software_Company_Automation
         }
         SqlConnection baglanti = new SqlConnection(GirisPenceresi.global_baglanti_adresi);//VERİTABANINA BAĞLANTI ADRESİ
         SqlDataAdapter Komutlar;//TABLO ÇEKMEK İÇİN KULLANILIR
-        SqlCommand komut;//SQL İFADELERİ İÇİN KULLANILIR
-        SqlDataReader oku;//ÇEKİLEN VERİLERİN ALANLARINA GÖRE TEKER TEKER OKUMA
         DataSet veriseti = new DataSet();//VERİ SETİDİR
         private void MusteriArama_Load(object sender, EventArgs e)
         {

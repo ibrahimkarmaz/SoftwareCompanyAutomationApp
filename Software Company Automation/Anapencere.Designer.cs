@@ -1,6 +1,6 @@
 ﻿namespace Software_Company_Automation
 {
-    partial class Anapencere
+    partial class MusteriAnaPencere
     {
         /// <summary>
         /// Required designer variable.
@@ -77,7 +77,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.tablolari_listele_dgv.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.tablolari_listele_dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.tablolari_listele_dgv.Size = new System.Drawing.Size(810, 438);
+            this.tablolari_listele_dgv.Size = new System.Drawing.Size(863, 498);
             this.tablolari_listele_dgv.TabIndex = 51;
             // 
             // musteriAramaToolStripMenuItem
@@ -127,7 +127,7 @@
             this.cikisYapToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(810, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(863, 24);
             this.menuStrip1.TabIndex = 52;
             this.menuStrip1.Text = "UstMenu";
             // 
@@ -138,21 +138,21 @@
             this.cikisYapToolStripMenuItem.Text = "Çıkış Yap";
             this.cikisYapToolStripMenuItem.Click += new System.EventHandler(this.cikisYapToolStripMenuItem_Click);
             // 
-            // Anapencere
+            // MusteriAnaPencere
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(810, 462);
+            this.ClientSize = new System.Drawing.Size(863, 522);
             this.Controls.Add(this.tablolari_listele_dgv);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Anapencere";
+            this.Name = "MusteriAnaPencere";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Anapencere";
+            this.Text = "Müşteri İşlemleri";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Anapencere_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tablolari_listele_dgv)).EndInit();

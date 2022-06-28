@@ -11,15 +11,13 @@ using System.Data.SqlClient;
 
 namespace Software_Company_Automation
 {
-    public partial class AnaForm : Form
+    public partial class PersonelPencere : Form
     {
-        public AnaForm()
+        public PersonelPencere()
         {
             InitializeComponent();
         }
-
-        public static string globel_baglantisi_adresi = @"server=DESKTOP-5DGSRBQ;database=PDKS;Trusted_Connection=yes";
-        SqlConnection baglanti = new SqlConnection(AnaForm.globel_baglantisi_adresi);//VERİTABANINA BAĞLANTI ADRESİ
+        SqlConnection baglanti = new SqlConnection(GirisPencere.global_baglanti_adresi);//VERİTABANINA BAĞLANTI ADRESİ
         SqlDataAdapter Komutlar;//TABLO ÇEKMEK İÇİN KULLANILIR
         SqlCommand komut;//SQL İFADELERİ İÇİN KULLANILIR
         SqlDataReader oku;//ÇEKİLEN VERİLERİN ALANLARINA GÖRE TEKER TEKER OKUMA

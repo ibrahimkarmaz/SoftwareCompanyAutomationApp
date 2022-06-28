@@ -11,9 +11,9 @@ using System.Data.SqlClient;
 
 namespace Software_Company_Automation
 {
-    public partial class Anapencere : Form
+    public partial class MusteriAnaPencere : Form
     {
-        public Anapencere()
+        public MusteriAnaPencere()
         {
             InitializeComponent();
         }
@@ -75,7 +75,7 @@ namespace Software_Company_Automation
                 if (tablolari_listele_dgv.CurrentRow.Cells[0].Value.ToString() != "")
                 {
                     guncelleme_islemi_icin_tc = tablolari_listele_dgv.CurrentRow.Cells[0].Value.ToString();//MÜŞTERİNİN TCSINI ALMA
-                    Musteri_islemleri_penceresi duzenleme_penceresi = new Musteri_islemleri_penceresi();//PENCERE TANIMLAMA 
+                    MusteriEklePencere duzenleme_penceresi = new MusteriEklePencere();//PENCERE TANIMLAMA 
                     duzenleme_penceresi.ShowDialog();//PENCERE AÇMA
                     tabloyu_getir();//TABLOYU GÜNCELLEME
                     guncelleme_islemi_icin_tc = "";
@@ -93,7 +93,7 @@ namespace Software_Company_Automation
 
         private void musteriEkleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Musteri_islemleri_penceresi musteri_ekle = new Musteri_islemleri_penceresi();//PENCERE TANIMLAMA 
+            MusteriEklePencere musteri_ekle = new MusteriEklePencere();//PENCERE TANIMLAMA 
             musteri_ekle.ShowDialog();//PENCERE AÇMA
             tabloyu_getir();//TABLOYU GÜNCELLEME
         }
@@ -195,7 +195,7 @@ namespace Software_Company_Automation
 
         private void cikisYapToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();//PROGRAMI TAMAMEN KAPATIR
+            this.Close();
         }
     }
 }

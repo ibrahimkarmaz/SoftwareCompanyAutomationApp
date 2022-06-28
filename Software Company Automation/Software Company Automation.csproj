@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AnaForm.cs">
+    <Compile Include="AdminPencere.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AnaForm.Designer.cs">
-      <DependentUpon>AnaForm.cs</DependentUpon>
+    <Compile Include="AdminPencere.Designer.cs">
+      <DependentUpon>AdminPencere.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelIslemPencere.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelIslemPencere.Designer.cs">
+      <DependentUpon>PersonelIslemPencere.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelPencere.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelPencere.Designer.cs">
+      <DependentUpon>PersonelPencere.cs</DependentUpon>
     </Compile>
     <Compile Include="Anapencere.cs">
       <SubType>Form</SubType>
@@ -70,11 +82,11 @@
     <Compile Include="DevamKontrolForm.Designer.cs">
       <DependentUpon>DevamKontrolForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="GirisPencere.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="GirisPencere.Designer.cs">
+      <DependentUpon>GirisPencere.cs</DependentUpon>
     </Compile>
     <Compile Include="GirisPenceresi.cs">
       <SubType>Form</SubType>
@@ -120,8 +132,14 @@
     <Compile Include="UrunSilPnc.Designer.cs">
       <DependentUpon>UrunSilPnc.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AnaForm.resx">
-      <DependentUpon>AnaForm.cs</DependentUpon>
+    <EmbeddedResource Include="AdminPencere.resx">
+      <DependentUpon>AdminPencere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelIslemPencere.resx">
+      <DependentUpon>PersonelIslemPencere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelPencere.resx">
+      <DependentUpon>PersonelPencere.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Anapencere.resx">
       <DependentUpon>Anapencere.cs</DependentUpon>
@@ -132,8 +150,8 @@
     <EmbeddedResource Include="DevamKontrolForm.resx">
       <DependentUpon>DevamKontrolForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="GirisPencere.resx">
+      <DependentUpon>GirisPencere.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GirisPenceresi.resx">
       <DependentUpon>GirisPenceresi.cs</DependentUpon>

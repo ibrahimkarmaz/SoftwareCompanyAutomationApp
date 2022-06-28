@@ -11,9 +11,9 @@ using System.Data.SqlClient;
 
 namespace Software_Company_Automation
 {
-    public partial class Musteri_islemleri_penceresi : Form
+    public partial class MusteriEklePencere : Form
     {
-        public Musteri_islemleri_penceresi()
+        public MusteriEklePencere()
         {
             InitializeComponent();
         }
@@ -35,7 +35,7 @@ namespace Software_Company_Automation
             illeri_cek();//İLLERİ EKLEME FOKSİYONU
             this.Text = "Müşteri Ekleme Penceresi";
 
-            if (Anapencere.guncelleme_islemi_icin_tc != "")
+            if (MusteriAnaPencere.guncelleme_islemi_icin_tc != "")
             {
                 personel_bilgilerini_cek();//PERSONEL BİLGİLERİNİ GETİRME
                 this.Text = "Müşteri Bilgilerini Güncelle Penceresi";
@@ -48,7 +48,7 @@ namespace Software_Company_Automation
             {
                 string il = "", ilce = "";//İL İLÇE VERİTABANİNDAN ÇEKİLDİĞİ İÇİN BAĞLANTI İÇİN DE BAĞLANTI AÇMAYA ÇALIŞIRDIĞINDA HATA VERİYOR ONUN İÇİN SADECE İL İLÇEYİ SAKLAMA SONRADAN SEÇME İŞLEMİNE GİDİYORUZ.
                 baglanti.Open();//VERİTABANINA BAĞLANTI AÇILDI
-                komut = new SqlCommand("select * from MusteriTablosu where tcno='" + Anapencere.guncelleme_islemi_icin_tc + "' and arsiv=1", baglanti);//VERİLERİ ÇEKME KOMUTU
+                komut = new SqlCommand("select * from MusteriTablosu where tcno='" + MusteriAnaPencere.guncelleme_islemi_icin_tc + "' and arsiv=1", baglanti);//VERİLERİ ÇEKME KOMUTU
                 oku = komut.ExecuteReader();//KOMUTLARI ÇALIŞTIRIP VERİLERİ SAKLADIĞIMIZ KOMUT//ÇALIŞTIRMA VE ALMA
                 if (oku.Read())//EĞER BİLGİ VARSA (BİRDEN FAZLA) ÇALIŞTIR
                 {
@@ -140,7 +140,7 @@ namespace Software_Company_Automation
             {
                 if (tc_masketb.Text.Count() == 11)//TC NONUN EKSİK GİRİRME DURUMU
                 {
-                    if (Anapencere.guncelleme_islemi_icin_tc != "")//EĞER GÜNCELLEME BUTONUNA BASILIP GELİNDİ İSE SAYFAYA
+                    if (MusteriAnaPencere.guncelleme_islemi_icin_tc != "")//EĞER GÜNCELLEME BUTONUNA BASILIP GELİNDİ İSE SAYFAYA
                     {
                         Musteri_Bilgilerini_Guncelle();//GÜNCELLEME İŞLEMİ YAPILIR
                     }
@@ -192,11 +192,11 @@ namespace Software_Company_Automation
                 baglanti.Open();//VERİTABANINA BAĞLANTI AÇILDI//VERİTABANI BAĞLANTISI
                 if (erkek_rb.Checked == true)//ERKEK İÇİN ÇALISILACAK YER
                 {
-                    komut = new SqlCommand("update MusteriTablosu set tcno='" + tc_masketb.Text + "',ad='" + ad_tb.Text + "',soyad='" + soyad_tb.Text + "',cinsiyet='Erkek',il='" + il_combo.Text + "',ilce='" + ilce_combo.Text + "',cep_telefonu='" + cep_masketb.Text + "',ev_telefonu='" + ev_masketb.Text + "',eposta='" + (mail_tb.Text + "@" + mail_uzantisi_combo.Text) + "',ev_adresi='" + adres_tb.Text + "',aciklama='" + aciklama_tb.Text + "' where tcno='" + Anapencere.guncelleme_islemi_icin_tc + "'", baglanti);//MÜŞTERİ BİLGİLERİNİ DÜZENLEME İŞLEMLERİ
+                    komut = new SqlCommand("update MusteriTablosu set tcno='" + tc_masketb.Text + "',ad='" + ad_tb.Text + "',soyad='" + soyad_tb.Text + "',cinsiyet='Erkek',il='" + il_combo.Text + "',ilce='" + ilce_combo.Text + "',cep_telefonu='" + cep_masketb.Text + "',ev_telefonu='" + ev_masketb.Text + "',eposta='" + (mail_tb.Text + "@" + mail_uzantisi_combo.Text) + "',ev_adresi='" + adres_tb.Text + "',aciklama='" + aciklama_tb.Text + "' where tcno='" + MusteriAnaPencere.guncelleme_islemi_icin_tc + "'", baglanti);//MÜŞTERİ BİLGİLERİNİ DÜZENLEME İŞLEMLERİ
                 }
                 else if (kadin_rb.Checked == true)//KADIN İÇİN ÇALISILACAK YER
                 {
-                    komut = new SqlCommand("update MusteriTablosu set tcno='" + tc_masketb.Text + "',ad='" + ad_tb.Text + "',soyad='" + soyad_tb.Text + "',cinsiyet='Kadın',il='" + il_combo.Text + "',ilce='" + ilce_combo.Text + "',cep_telefonu='" + cep_masketb.Text + "',ev_telefonu='" + ev_masketb.Text + "',eposta='" + (mail_tb.Text + "@" + mail_uzantisi_combo.Text) + "',ev_adresi='" + adres_tb.Text + "',aciklama='" + aciklama_tb.Text + "' where tcno='" + Anapencere.guncelleme_islemi_icin_tc + "'", baglanti);//MÜŞTERİ BİLGİLERİNİ DÜZENLEME İŞLEMLERİ
+                    komut = new SqlCommand("update MusteriTablosu set tcno='" + tc_masketb.Text + "',ad='" + ad_tb.Text + "',soyad='" + soyad_tb.Text + "',cinsiyet='Kadın',il='" + il_combo.Text + "',ilce='" + ilce_combo.Text + "',cep_telefonu='" + cep_masketb.Text + "',ev_telefonu='" + ev_masketb.Text + "',eposta='" + (mail_tb.Text + "@" + mail_uzantisi_combo.Text) + "',ev_adresi='" + adres_tb.Text + "',aciklama='" + aciklama_tb.Text + "' where tcno='" + MusteriAnaPencere.guncelleme_islemi_icin_tc + "'", baglanti);//MÜŞTERİ BİLGİLERİNİ DÜZENLEME İŞLEMLERİ
                 }
                 komut.ExecuteNonQuery();//SQL İFADELERİNİN ÇALIŞTIRIRDIĞI YER
                 baglanti.Close();//VERİTABANI BAĞLANTISI KAPATILDI

@@ -17,7 +17,7 @@ namespace Software_Company_Automation
         {
             InitializeComponent();
         }
-        SqlConnection baglanti_adresi = new SqlConnection(APencere.global_baglanti_adresi);//VERİTABANINA BAĞLANTI ADRESİ
+        SqlConnection baglanti_adresi = new SqlConnection(GirisPencere.global_baglanti_adresi);//VERİTABANINA BAĞLANTI ADRESİ
         SqlDataAdapter Komut_veri_donusumu;//tablolari çekmek için kullanılıyor
         DataSet veriseti = new DataSet();//çekilen tablolari saklamak için kullanılır.
         private void AramaYapPnc_Load(object sender, EventArgs e)

@@ -16,7 +16,7 @@ namespace Software_Company_Automation
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new APencere());
+            Application.Run(new PersonelIslemPencere());
         }
     }
 }

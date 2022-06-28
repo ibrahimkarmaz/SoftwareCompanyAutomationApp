@@ -17,7 +17,7 @@ namespace Software_Company_Automation
         {
             InitializeComponent();
         }
-        SqlConnection baglanti = new SqlConnection(APencere.global_baglanti_adresi);//VERİTABANINA BAĞLANTI ADRESİ
+        SqlConnection baglanti = new SqlConnection(GirisPencere.global_baglanti_adresi);//VERİTABANINA BAĞLANTI ADRESİ
         SqlCommand komut;//SQL İFADELERİNİ ÇALIŞTIRAN KOMUT
         SqlDataReader oku;//VERİ ÇEKİLME İŞLEMİ VARSA KULLANILAN KOMUTLERDEN BİRİSİ
         private void StokEkleGuncellePenceresi_Load(object sender, EventArgs e)
@@ -39,7 +39,7 @@ namespace Software_Company_Automation
 
 
             Urun_Kodu_Combobox.Visible = false;//Sadece güncelleme işleminde kullanılacak.
-            if (APencere.guncelleme_islemi_yap == true)//GÜNCELLEME İŞLEMLERİ İÇİN AKTİF HALE GETİRİLDİ.
+            if (AdminPencere.guncelleme_islemi_yap == true)//GÜNCELLEME İŞLEMLERİ İÇİN AKTİF HALE GETİRİLDİ.
             {
                 urun_adet_numericUpDown1.Minimum = 0;//ÜRÜN SATIŞA ÇIKTU İSE ADET MİKTARİ SIFIR OLABİLİR
                 Urun_Ekle_Guncelle_button1.Enabled = false;
@@ -102,11 +102,11 @@ namespace Software_Company_Automation
                 {
                     if (urun_fiyat_textBox4.Text != "")//AÇIKLAMA KUTUSU BOŞ GEÇİLEMEZ
                     {
-                        if (APencere.guncelleme_islemi_yap==false)
+                        if (AdminPencere.guncelleme_islemi_yap==false)
                         {
                             veritabanina_ekle();
                         }
-                        else if (APencere.guncelleme_islemi_yap == true)
+                        else if (AdminPencere.guncelleme_islemi_yap == true)
                         {
                             veritabanina_guncelleme_yap();
                         }
