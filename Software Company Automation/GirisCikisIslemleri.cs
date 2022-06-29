@@ -98,7 +98,7 @@ namespace Software_Company_Automation
             if (ChbCikisDegistir.Checked)
             {
                 TbCikisSaat.Enabled = textBox1.Enabled = true;
-                MessageBox.Show("GİRİŞ SAATINI DEĞİŞTİRME İLE İLGİLİ OLARAK AÇIKLAMA SATIRINA EN AZ 15 HANELI BİLGİ YAZILMALI.", "AÇIKLAMA", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("ÇIKIŞ SAATINI DEĞİŞTİRME İLE İLGİLİ OLARAK AÇIKLAMA SATIRINA EN AZ 15 HANELI BİLGİ YAZILMALI.", "AÇIKLAMA", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {

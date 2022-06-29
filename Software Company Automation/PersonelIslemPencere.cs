@@ -24,7 +24,7 @@ namespace Software_Company_Automation
         {
             MusteriAnaPencere MusteriIslem = new MusteriAnaPencere();
             MusteriIslem.ShowDialog();
-            
+
         }
 
         private void PersonelIslemPencere_Load(object sender, EventArgs e)
@@ -40,13 +40,20 @@ namespace Software_Company_Automation
         private void GirisCikisIslemleriniKontrolEt()
         {
             baglanti.Open();
-            komut = new SqlCommand("select * from CalismaTablo where TC='"+GirisPencere.tc+"' and Tarih='"+DateTime.Now.ToShortDateString()+"'",baglanti);
+            komut = new SqlCommand("select * from CalismaTablo where TC='" + GirisPencere.tc + "' and Tarih='" + DateTime.Now.ToShortDateString() + "'", baglanti);
             oku = komut.ExecuteReader();
             if (oku.Read())
             {
                 iseGirisYapMenu.Visible = false;
-                istenCikisYapMenu.Visible = YeniIsBilgisiGir.Visible = true;
                 IS = true;
+                if (oku["BitisSaat"].ToString().Trim() == "")
+                {
+                    istenCikisYapMenu.Visible = YeniIsBilgisiGir.Visible = true;
+                }
+                else
+                {
+                    istenCikisYapMenu.Visible = YeniIsBilgisiGir.Visible = false;
+                }
             }
             else
             {
@@ -60,7 +67,7 @@ namespace Software_Company_Automation
         private void timer1_Tick(object sender, EventArgs e)
         {
             SaatBilgisi.Text = "SAAT:" + (DateTime.Now.ToShortTimeString());
-            TarihBilgisi.Text="TARİH:" + (DateTime.Now.ToShortDateString());
+            TarihBilgisi.Text = "TARİH:" + (DateTime.Now.ToShortDateString());
         }
 
         private void PersonelIslemPencere_FormClosing(object sender, FormClosingEventArgs e)
@@ -70,9 +77,10 @@ namespace Software_Company_Automation
 
         private void işeBaşlaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            YeniIsBilgisiGir YeniIs = new YeniIsBilgisiGir();
+            YeniIs.ShowDialog();
         }
-        
+
         private void iseGirisYapMenu_Click(object sender, EventArgs e)
         {
             GirisCikisIslemleri GirisYap = new GirisCikisIslemleri();
