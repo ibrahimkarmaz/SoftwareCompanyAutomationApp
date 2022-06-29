@@ -150,7 +150,7 @@
             // 
             // personel_bilgileri_guncelle_buton
             // 
-            this.personel_bilgileri_guncelle_buton.Location = new System.Drawing.Point(12, 280);
+            this.personel_bilgileri_guncelle_buton.Location = new System.Drawing.Point(13, 281);
             this.personel_bilgileri_guncelle_buton.Name = "personel_bilgileri_guncelle_buton";
             this.personel_bilgileri_guncelle_buton.Size = new System.Drawing.Size(333, 30);
             this.personel_bilgileri_guncelle_buton.TabIndex = 83;

@@ -17,7 +17,7 @@ namespace Software_Company_Automation
         {
             InitializeComponent();
         }
-        SqlConnection baglanti = new SqlConnection(GirisPenceresi.global_baglanti_adresi);//BAĞLANTI ADRESİ
+        SqlConnection baglanti = new SqlConnection(GirisPencere.global_baglanti_adresi);//BAĞLANTI ADRESİ
         SqlDataAdapter Komutlar;//TABLOLARIN ÇEKİLMESİNDE KULLANILAN KOMUT
         SqlCommand komut;//SQL İFADELERİNİ ÇALIŞTIRAN KOMUT
         DataSet veriseti = new DataSet();//ÇEKİLEN TABLOLARI SAKLAMAK İÇİN GEREK KOMUT

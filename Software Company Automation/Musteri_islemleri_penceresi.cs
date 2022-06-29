@@ -17,7 +17,7 @@ namespace Software_Company_Automation
         {
             InitializeComponent();
         }
-        SqlConnection baglanti = new SqlConnection(GirisPenceresi.global_baglanti_adresi);//VERİTABANINA BAĞLANTI ADRESİ
+        SqlConnection baglanti = new SqlConnection(GirisPencere.global_baglanti_adresi);//VERİTABANINA BAĞLANTI ADRESİ
         SqlCommand komut;//SQL İFADELERİNİ ÇALIŞTIRAN KOMUT/
         SqlDataReader oku;//VERİ ÇEKİLME İŞLEMİ VARSA KULLANILAN KOMUTLERDEN BİRİSİ
         private void Form1_Load(object sender, EventArgs e)

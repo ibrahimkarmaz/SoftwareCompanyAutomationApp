@@ -89,6 +89,7 @@ namespace Software_Company_Automation
                 if (adi_textbox.Text != "" && soyadi_textbox.Text != "")//AD SOYAD BOŞ OLAMAZ
                 {
                     personel_kaydet();//YENİ PERSONEL KAYDI FOKSİYONU
+                    YeniKullaniciEkle(soyadi_textbox.Text + tcno_masked.Text.Substring(0, tcno_masked.Text.Length - 7));//GİRİŞ İŞLEMLERİ İÇİN KAYITLAR
                     tabloyu_getir();//TABLOYU YENİDEN GETİRİR.(GÜNCELLEME İŞLEMİ)
                     temizle();
                 }
@@ -120,6 +121,22 @@ namespace Software_Company_Automation
             }
         }
 
+        private void YeniKullaniciEkle(string parola)//GİRİŞ İŞLEMLERİ İÇİN KAYITLAR
+        {//PAROLA SOYAD+ T.C İLK 4 HANESİ
+
+            try
+            {
+                baglanti.Open();//VERİTABANINA BAĞLANIR
+                komut = new SqlCommand("insert into GirisTablosu values('" + tcno_masked.Text + "','" +parola+  "',0)", baglanti);//PERSONEL VERİ KAYDI
+                komut.ExecuteNonQuery();//SQL İFADELERİNİN ÇALIŞIR
+                baglanti.Close();//VERİTABANI BAĞLANTISI KAPATILIR
+            }
+            catch (Exception)//HATA VARSA;
+            {
+                baglanti.Close();//VERİTABANI BAĞLANTISI KAPATILIR
+                MessageBox.Show("HATA OLUŞTU\nSEBEP:\nBU T.C KİMLİK NONA AİT PERSONEL OLABİLİR\nSİSTEMSEL HATALAR", "HATA", MessageBoxButtons.OK, MessageBoxIcon.Error);//HATA HAKKINDA BİLGİ VERİRLİR.
+            }
+        }
         private void getir_buton_Click(object sender, EventArgs e)
         {
             try
@@ -186,6 +203,7 @@ namespace Software_Company_Automation
                 if (adi_textbox.Text != "" && soyadi_textbox.Text != "")//AD SOYAD BOŞ OLAMAZ
                 {
                     personel_bilgilerini_guncelle();//PERSONEL BİLGİLERİ GÜNCELLER
+                    KullaniciGuncelle(soyadi_textbox.Text + tcno_masked.Text.Substring(0, tcno_masked.Text.Length - 7));
                     tabloyu_getir();//TABLOYU YENİLEME
                     personel_bilgileri_guncelle_buton.Enabled = false;//GÜNCELLEME İŞLEMİ YAPILDIKTAN SONRA KAPATILIR.
                     temizle();
@@ -218,6 +236,22 @@ namespace Software_Company_Automation
                 MessageBox.Show("HATA OLUŞTU" + HATA, "HATA", MessageBoxButtons.OK, MessageBoxIcon.Error);//HATA HAKKINDA BİLGİ VERİRLİR.
             }
         }
+        private void KullaniciGuncelle(string parola)//GİRİŞ İŞLEMLERİ İÇİN GÜNCELLEMELER
+        {//PAROLA SOYAD+ T.C İLK 4 HANESİ
+
+            try
+            {
+                baglanti.Open();//VERİTABANINA BAĞLANIR
+                komut = new SqlCommand("update GirisTablosu set Parola='" + parola + "' where Tcno='"+tcno_masked.Text+"'", baglanti);//PERSONEL KULLANICI GÜNCELLEME
+                komut.ExecuteNonQuery();//SQL İFADELERİNİN ÇALIŞIR
+                baglanti.Close();//VERİTABANI BAĞLANTISI KAPATILIR
+            }
+            catch (Exception)//HATA VARSA;
+            {
+                baglanti.Close();//VERİTABANI BAĞLANTISI KAPATILIR
+                MessageBox.Show("HATA OLUŞTU\nSEBEP:\nBU T.C KİMLİK NONA AİT PERSONEL OLABİLİR\nSİSTEMSEL HATALAR", "HATA", MessageBoxButtons.OK, MessageBoxIcon.Error);//HATA HAKKINDA BİLGİ VERİRLİR.
+            }
+        }
 
         private void personel_cikar_buton_Click(object sender, EventArgs e)
         {
@@ -228,6 +262,7 @@ namespace Software_Company_Automation
                     if (MessageBox.Show("PERSONEL SİSTEMDEN ÇIKARILSIN MI ?", "SORU", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)//PERSONELİ ÇIKARMAK İSTEDİĞİNİZDEN EMİNMİSİNİZ KONTROLU CEVAP YES İSE;
                     {
                         personel_cikar();//PERSONEL ÇIKARMA FOKSİYONU
+                        KullaniciSil();
                         temizle();
                     }
                 }
@@ -256,6 +291,22 @@ namespace Software_Company_Automation
             {
                 baglanti.Close();//VERİTABANI BAĞLANTISI KAPATILIR
                 MessageBox.Show("HATA OLUŞTU" + HATA, "HATA", MessageBoxButtons.OK, MessageBoxIcon.Error);//HATA HAKKINDA BİLGİ VERİRLİR.
+            }
+        }
+        private void KullaniciSil()//GİRİŞ İŞLEMLERİ İÇİN GÜNCELLEMELER
+        {//PAROLA SOYAD+ T.C İLK 4 HANESİ
+
+            try
+            {
+                baglanti.Open();//VERİTABANINA BAĞLANIR
+                komut = new SqlCommand("DELETE GirisTablosu where Tcno='" + tcno_masked.Text + "'", baglanti);//PERSONEL KULLANICI GÜNCELLEME
+                komut.ExecuteNonQuery();//SQL İFADELERİNİN ÇALIŞIR
+                baglanti.Close();//VERİTABANI BAĞLANTISI KAPATILIR
+            }
+            catch (Exception)//HATA VARSA;
+            {
+                baglanti.Close();//VERİTABANI BAĞLANTISI KAPATILIR
+                MessageBox.Show("HATA OLUŞTU\nSEBEP:\nBU T.C KİMLİK NONA AİT PERSONEL OLABİLİR\nSİSTEMSEL HATALAR", "HATA", MessageBoxButtons.OK, MessageBoxIcon.Error);//HATA HAKKINDA BİLGİ VERİRLİR.
             }
         }
 
