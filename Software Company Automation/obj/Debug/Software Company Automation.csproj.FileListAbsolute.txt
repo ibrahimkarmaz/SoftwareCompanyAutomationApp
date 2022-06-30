@@ -63,3 +63,7 @@ C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Co
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software Company Automation.csproj.CopyComplete
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software Company Automation.exe
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software Company Automation.pdb
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software Company Automation.csprojAssemblyReference.cache
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software_Company_Automation.YapilanIslerinListesi.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software_Company_Automation.YapilanIsDetayListe.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\SoftwareCompanyAutomationApp\Software Company Automation\obj\Debug\Software_Company_Automation.PersonelGirisCikisKontrol.resources

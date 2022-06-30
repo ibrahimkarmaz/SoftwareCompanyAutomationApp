@@ -30,6 +30,7 @@ namespace Software_Company_Automation
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.personelİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iseGirisYapMenu = new System.Windows.Forms.ToolStripMenuItem();
@@ -40,7 +41,12 @@ namespace Software_Company_Automation
             this.TarihBilgisi = new System.Windows.Forms.ToolStripMenuItem();
             this.SaatBilgisi = new System.Windows.Forms.ToolStripMenuItem();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.Liste = new System.Windows.Forms.DataGridView();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.UrunleriListeleMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Liste)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -101,6 +107,7 @@ namespace Software_Company_Automation
             this.cikisYapToolStripMenuItem.Name = "cikisYapToolStripMenuItem";
             this.cikisYapToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.cikisYapToolStripMenuItem.Text = "Çıkış Yap";
+            this.cikisYapToolStripMenuItem.Click += new System.EventHandler(this.cikisYapToolStripMenuItem_Click);
             // 
             // TarihBilgisi
             // 
@@ -120,12 +127,43 @@ namespace Software_Company_Automation
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // Liste
+            // 
+            this.Liste.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Liste.ContextMenuStrip = this.contextMenuStrip1;
+            this.Liste.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Liste.Location = new System.Drawing.Point(0, 24);
+            this.Liste.Margin = new System.Windows.Forms.Padding(4);
+            this.Liste.Name = "Liste";
+            this.Liste.ReadOnly = true;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.Liste.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.Liste.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.Liste.Size = new System.Drawing.Size(756, 382);
+            this.Liste.TabIndex = 54;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.UrunleriListeleMenu});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 26);
+            // 
+            // UrunleriListeleMenu
+            // 
+            this.UrunleriListeleMenu.Name = "UrunleriListeleMenu";
+            this.UrunleriListeleMenu.Size = new System.Drawing.Size(180, 22);
+            this.UrunleriListeleMenu.Text = "Alinan Ürünleri Liste";
+            this.UrunleriListeleMenu.Click += new System.EventHandler(this.UrunleriListeleMenu_Click);
+            // 
             // PersonelIslemPencere
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(756, 406);
+            this.Controls.Add(this.Liste);
             this.Controls.Add(this.menuStrip1);
             this.Name = "PersonelIslemPencere";
             this.Text = "PersonelIslemPencere";
@@ -133,6 +171,8 @@ namespace Software_Company_Automation
             this.Load += new System.EventHandler(this.PersonelIslemPencere_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Liste)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,5 +190,8 @@ namespace Software_Company_Automation
         private System.Windows.Forms.ToolStripMenuItem TarihBilgisi;
         private System.Windows.Forms.ToolStripMenuItem SaatBilgisi;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.DataGridView Liste;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem UrunleriListeleMenu;
     }
 }

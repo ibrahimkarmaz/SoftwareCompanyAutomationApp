@@ -66,6 +66,12 @@
     <Compile Include="GirisCikisIslemleri.Designer.cs">
       <DependentUpon>GirisCikisIslemleri.cs</DependentUpon>
     </Compile>
+    <Compile Include="PersonelGirisCikisKontrol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelGirisCikisKontrol.Designer.cs">
+      <DependentUpon>PersonelGirisCikisKontrol.cs</DependentUpon>
+    </Compile>
     <Compile Include="PersonelIslemPencere.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +146,18 @@
     <Compile Include="UrunSilPnc.Designer.cs">
       <DependentUpon>UrunSilPnc.cs</DependentUpon>
     </Compile>
+    <Compile Include="YapilanIsDetayListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YapilanIsDetayListe.Designer.cs">
+      <DependentUpon>YapilanIsDetayListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YapilanIslerinListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YapilanIslerinListesi.Designer.cs">
+      <DependentUpon>YapilanIslerinListesi.cs</DependentUpon>
+    </Compile>
     <Compile Include="YeniIsBilgisiGir.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +169,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GirisCikisIslemleri.resx">
       <DependentUpon>GirisCikisIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelGirisCikisKontrol.resx">
+      <DependentUpon>PersonelGirisCikisKontrol.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PersonelIslemPencere.resx">
       <DependentUpon>PersonelIslemPencere.cs</DependentUpon>
@@ -197,6 +218,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UrunSilPnc.resx">
       <DependentUpon>UrunSilPnc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YapilanIsDetayListe.resx">
+      <DependentUpon>YapilanIsDetayListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YapilanIslerinListesi.resx">
+      <DependentUpon>YapilanIslerinListesi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="YeniIsBilgisiGir.resx">
       <DependentUpon>YeniIsBilgisiGir.cs</DependentUpon>

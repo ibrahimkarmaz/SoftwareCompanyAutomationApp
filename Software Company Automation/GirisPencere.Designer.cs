@@ -98,6 +98,7 @@ namespace Software_Company_Automation
             this.parola_tb.Size = new System.Drawing.Size(269, 24);
             this.parola_tb.TabIndex = 4;
             this.parola_tb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.parola_tb.UseSystemPasswordChar = true;
             // 
             // parola_pb
             // 

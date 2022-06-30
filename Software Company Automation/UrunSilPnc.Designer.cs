@@ -42,7 +42,7 @@
             this.sil_bt.Name = "sil_bt";
             this.sil_bt.Size = new System.Drawing.Size(254, 33);
             this.sil_bt.TabIndex = 67;
-            this.sil_bt.Text = "EMLAK BİLGİLERİNİ SİL";
+            this.sil_bt.Text = "ÜRÜN BİLGİLERİNİ SİL";
             this.sil_bt.UseVisualStyleBackColor = false;
             this.sil_bt.Click += new System.EventHandler(this.sil_bt_Click);
             // 
